@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil - Endan Poernomo | Teknik Informatika UMC</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome untuk Ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Hubungkan ke file style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav>
+      <a href="#" class="nav-logo">Endan<span> dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header>
+      <!-- Header / Hero -->
+      <!-- Layer Foto Background (Opsional: otomatis muncul jika assets/bg-hero.jpg ada) -->
+      <div class="hero-bg-photo"></div>
+      <!-- Layer Canvas Animasi Partikel Jaringan -->
+      <canvas id="network-canvas"></canvas>
+
+      <!-- Konten Utama Hero -->
+      <div class="hero-content">
+        <div class="profile-wrapper">
+          <img
+            src="assets/foto.jpeg"
+            alt="Foto Profil Endan Poernomo"
+            class="profile-img"
+          />
+        </div>
+        <div class="hero-bg-photo"></div>
+        <canvas id="network-canvas"></canvas>
+
+        <div class="hero-content">
+          <!-- Isi foto profil, nama, deskripsi, dan tombol di sini -->
+        </div>
+        <br />
+        <span class="status-badge">Mahasiswa Teknik Informatika • UMC</span>
+        <h1>Endan Poernomo</h1>
+        <p>
+          Berfokus pada pengembangan aplikasi multi-platform (Web, Mobile, &
+          Desktop) serta pengelolaan infrastruktur jaringan.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyek" class="btn btn-primary"
+            ><i class="fa-solid fa-code"></i> Lihat Proyek</a
+          >
+          <a href="#kontak" class="btn btn-outline"
+            ><i class="fa-regular fa-envelope"></i> Hubungi Saya</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+      <!-- Tentang Saya -->
+      <section id="tentang">
+        <div class="section-header">
+          <h2 class="section-title">Tentang Saya</h2>
+        </div>
+        <div class="about-card">
+          <p>
+            Halo! Saya <strong>Endan Poernomo</strong>, mahasiswa aktif Program
+            Studi Teknik Informatika di
+            <strong>Universitas Muhammadiyah Cirebon </strong>. Saya memiliki
+            ketertarikan mendalam pada pengembangan perangkat lunak lintas
+            platform menggunakan Flutter, ekosistem web modern, hingga integrasi
+            backend dan basis data. Selain pemrograman, saya juga berpengalaman
+            menangani infrastruktur jaringan dan dukungan teknis IT.
+          </p>
+        </div>
+      </section>
+
+      <!-- Keahlian -->
+      <section id="keahlian">
+        <div class="section-header">
+          <h2 class="section-title">Keahlian Teknis</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <h3>HTML, CSS & Bootstrap</h3>
+              <span>Frontend Web UI</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-info">
+              <h3>JavaScript & Node.js</h3>
+              <span>Web Interaktif & API</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Flutter & Dart</h3>
+              <span>Aplikasi Android</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+            <div class="skill-info">
+              <h3>PHP & MySQL</h3>
+              <span>Backend & Database</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-info">
+              <h3>Java</h3>
+              <span>Desktop & OOP</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="skill-info">
+              <h3>MikroTik & Jaringan</h3>
+              <span>Routing & IT Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyek Pilihan -->
+      <section id="proyek">
+        <div class="section-header">
+          <h2 class="section-title">Proyek Pilihan</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div>
+              <span class="project-tag">Mobile App</span>
+              <h3>Kasir Toko Khumaeroh</h3>
+              <p>
+                Aplikasi Point of Sale (POS) Android untuk UMKM dengan fitur
+                manajemen stok, pemesanan dine-in, dan cetak struk.
+              </p>
+            </div>
+            <div class="tech-stack">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>REST API</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <span class="project-tag">Web System</span>
+              <h3>Sistem Pengaduan IT</h3>
+              <p>
+                Aplikasi web manajemen keluhan IT terintegrasi notifikasi
+                WhatsApp API untuk mendukung operasional jaringan.
+              </p>
+            </div>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>WhatsApp API</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <span class="project-tag">Web Platform</span>
+              <h3>Learning Management System</h3>
+              <p>
+                Portal pembelajaran berbasis web dengan autentikasi multi-role,
+                manajemen tugas, unggah materi, dan penilaian.
+              </p>
+            </div>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>Bootstrap 5</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak">
+        <div class="contact-box">
+          <h2>Mari Terhubung!</h2>
+          <p>
+            Tertarik berdiskusi seputar pengembangan aplikasi, kolaborasi
+            proyek, atau peluang magang? Silakan hubungi saya melalui tautan di
+            bawah ini.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/Endanpoernomo"
+              target="_blank"
+              class="social-btn"
+            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="mailto:endanpurnomo6@gmail.com" class="social-btn">
+              <i class="fa-solid fa-envelope"></i> Email Saya
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Header / Hero -->
+
+    <!-- Script Animasi Background Jaringan + Reset Scroll -->
+    <script>
+      // 1. Bersihkan hash URL saat reload agar halaman selalu mulai dari atas
+      if (window.location.hash) {
+        history.replaceState(null, null, " ");
+      }
+      window.scrollTo(0, 0);
+
+      // 2. Animasi Interactive Network Particles di Hero
+      const canvas = document.getElementById("network-canvas");
+      const ctx = canvas.getContext("2d");
+      const header = document.querySelector("header");
+
+      let particles = [];
+      let mouse = { x: null, y: null, radius: 140 };
+
+      function resizeCanvas() {
+        canvas.width = header.offsetWidth;
+        canvas.height = header.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener("resize", () => {
+        resizeCanvas();
+        initParticles();
+      });
+
+      header.addEventListener("mousemove", (e) => {
+        const rect = header.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+      });
+
+      header.addEventListener("mouseleave", () => {
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2.2 + 1;
+          this.vx = (Math.random() - 0.5) * 0.9;
+          this.vy = (Math.random() - 0.5) * 0.9;
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(56, 189, 248, 0.75)";
+          ctx.fill();
+        }
+      }
+
+      function initParticles() {
+        particles = [];
+        const count = Math.min(
+          Math.floor((canvas.width * canvas.height) / 11000),
+          85,
+        );
+        for (let i = 0; i < count; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function connectParticles() {
+        for (let a = 0; a < particles.length; a++) {
+          for (let b = a + 1; b < particles.length; b++) {
+            const dx = particles[a].x - particles[b].x;
+            const dy = particles[a].y - particles[b].y;
+            const dist = Math.hypot(dx, dy);
+
+            if (dist < 125) {
+              ctx.strokeStyle = `rgba(56, 189, 248, ${0.28 * (1 - dist / 125)})`;
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(particles[a].x, particles[a].y);
+              ctx.lineTo(particles[b].x, particles[b].y);
+              ctx.stroke();
+            }
+          }
+
+          // Garis penghubung ke kursor mouse
+          if (mouse.x !== null && mouse.y !== null) {
+            const dxMouse = particles[a].x - mouse.x;
+            const dyMouse = particles[a].y - mouse.y;
+            const distMouse = Math.hypot(dxMouse, dyMouse);
+
+            if (distMouse < mouse.radius) {
+              ctx.strokeStyle = `rgba(255, 255, 255, ${0.45 * (1 - distMouse / mouse.radius)})`;
+              ctx.lineWidth = 1.2;
+              ctx.beginPath();
+              ctx.moveTo(particles[a].x, particles[a].y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p) => {
+          p.update();
+          p.draw();
+        });
+        connectParticles();
+        requestAnimationFrame(animate);
+      }
+
+      initParticles();
+      animate();
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Endan Poernomo • Teknik Informatika UMC</p>
+    </footer>
+    <script>
+      if (window.location.hash) {
+        history.replaceState(null, null, " ");
+      }
+      window.scrollTo(0, 0);
+    </script>
+  </body>
+</html>
